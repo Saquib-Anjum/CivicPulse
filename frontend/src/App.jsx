@@ -1,34 +1,42 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
-function App() {
-  const [count, setCount] = useState(0)
-
+import React,{ useState} from 'react'
+import {Toaster} from 'react-hot-toast'
+import {Route, Routes} from 'react-router-dom'
+import Navbar from './components/Navbar'
+import Login from './pages/Login'
+import HomePage from './pages/HomePage'
+import MyReports from './pages/MyReports'
+import NotFound from './pages/NotFound';
+import ReportIssue from './pages/ReportIssue'
+const App = () => {
+  
+    const [user, setUser] = useState(null);
+  
+    const handleLogin = (userData) => {
+      setUser(userData);
+    };
+  
+    const handleLogout = () => {
+      setUser(null);
+    };
+  
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    
+      
+      <div className='flex flex-col min-h-screen'>
+   <Navbar/>
+      <div className='flex-grow'>
+           <Routes>
+            <Route path="/" element={<HomePage/>}/>
+            <Route path="/report" element={<ReportIssue />} />
+            <Route path="/my-reports" element={<MyReports />} />
+            <Route path="/login" element={<Login onLogin={handleLogin} />} />
+            <Route path="*" element={<NotFound />} />
+            
+           </Routes>
+           <Toaster/>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+
+  </div>
   )
 }
 
