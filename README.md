@@ -74,22 +74,22 @@ VITE_GOOGLE_MAPS_API_KEY=your_maps_key
 ```
 
 ---
-# Clone the repo
+### Clone the repo
 ```
 git clone https://github.com/your-username/civicpulse.git
 ```
 
-# Navigate to the folder
+### Navigate to the folder
 ```
 cd civicpulse
 ```
 
-# Install dependencies
+### Install dependencies
 ```
 npm install
 ```
 
-# Start the dev server
+### Start the dev server
 ```
 npm run dev
 ```
