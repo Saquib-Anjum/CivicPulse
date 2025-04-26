@@ -7,6 +7,7 @@ import HomePage from './pages/HomePage'
 import MyReports from './pages/MyReports'
 import NotFound from './pages/NotFound';
 import ReportIssue from './pages/ReportIssue'
+import Footer from './components/Footer'
 const App = () => {
   
     const [user, setUser] = useState(null);
@@ -35,7 +36,7 @@ const App = () => {
            </Routes>
            <Toaster/>
       </div>
-
+      <Footer />
   </div>
   )
 }
