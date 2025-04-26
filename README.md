@@ -4,6 +4,10 @@
 A smart reporting platform that empowers citizens to report local civic issues like potholes, garbage dumps, and water leaks — directly to the right authorities.
 
 ---
+<p align="center">
+  <img src="https://github.com/Saquib-Anjum/CivicPulse/blob/main/frontend/public/logo.png" size={10}/>
+  
+</p>
 
 ## 📌 Problem Statement
 
@@ -24,7 +28,7 @@ People often struggle to report and track everyday civic issues due to outdated,
 
 ## 🚀 Live Demo
 
-🔗 [View CivicPulse on Netlify](https://your-demo-link.netlify.app)
+🔗 [View CivicPulse on Netlify](https://civic-pulse-sooty.vercel.app/)
 
 ---
 
@@ -32,7 +36,7 @@ People often struggle to report and track everyday civic issues due to outdated,
 
 | Home Page | Report Page |
 |-----------|-------------|
-| ![Home](./screenshots/home.png) | ![Report](./screenshots/report.png) |
+| ![Home](https://github.com/Saquib-Anjum/CivicPulse/blob/main/Screenshot/image.png) | ![Report](https://github.com/Saquib-Anjum/CivicPulse/blob/main/Screenshot/Screenshot%202025-04-26%20084132.png) |
 
 
 
